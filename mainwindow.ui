@@ -72,10 +72,10 @@
    <widget class="QLabel" name="label_orderidvalue">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>170</x>
       <y>230</y>
-      <width>53</width>
-      <height>16</height>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -85,10 +85,10 @@
    <widget class="QLabel" name="label_errorcodevalue">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>360</y>
-      <width>53</width>
-      <height>16</height>
+      <x>170</x>
+      <y>350</y>
+      <width>181</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -100,7 +100,7 @@
      <rect>
       <x>40</x>
       <y>290</y>
-      <width>101</width>
+      <width>121</width>
       <height>20</height>
      </rect>
     </property>
@@ -111,10 +111,10 @@
    <widget class="QLabel" name="label_resultvalue">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>170</x>
       <y>290</y>
-      <width>53</width>
-      <height>16</height>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -126,7 +126,7 @@
      <rect>
       <x>40</x>
       <y>430</y>
-      <width>71</width>
+      <width>101</width>
       <height>20</height>
      </rect>
     </property>
@@ -137,10 +137,10 @@
    <widget class="QLabel" name="label_desvalue">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>170</x>
       <y>430</y>
-      <width>53</width>
-      <height>16</height>
+      <width>181</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">

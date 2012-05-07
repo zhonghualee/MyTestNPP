@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri 4. May 16:20:44 2012
+** Created: Mon 7. May 15:45:31 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -59,22 +59,22 @@ public:
         label_errorcode->setGeometry(QRect(40, 350, 111, 31));
         label_orderidvalue = new QLabel(centralWidget);
         label_orderidvalue->setObjectName(QString::fromUtf8("label_orderidvalue"));
-        label_orderidvalue->setGeometry(QRect(220, 230, 53, 16));
+        label_orderidvalue->setGeometry(QRect(170, 230, 161, 31));
         label_errorcodevalue = new QLabel(centralWidget);
         label_errorcodevalue->setObjectName(QString::fromUtf8("label_errorcodevalue"));
-        label_errorcodevalue->setGeometry(QRect(220, 360, 53, 16));
+        label_errorcodevalue->setGeometry(QRect(170, 350, 181, 31));
         label_result = new QLabel(centralWidget);
         label_result->setObjectName(QString::fromUtf8("label_result"));
-        label_result->setGeometry(QRect(40, 290, 101, 20));
+        label_result->setGeometry(QRect(40, 290, 121, 20));
         label_resultvalue = new QLabel(centralWidget);
         label_resultvalue->setObjectName(QString::fromUtf8("label_resultvalue"));
-        label_resultvalue->setGeometry(QRect(220, 290, 53, 16));
+        label_resultvalue->setGeometry(QRect(170, 290, 161, 31));
         label_des = new QLabel(centralWidget);
         label_des->setObjectName(QString::fromUtf8("label_des"));
-        label_des->setGeometry(QRect(40, 430, 71, 20));
+        label_des->setGeometry(QRect(40, 430, 101, 20));
         label_desvalue = new QLabel(centralWidget);
         label_desvalue->setObjectName(QString::fromUtf8("label_desvalue"));
-        label_desvalue->setGeometry(QRect(220, 430, 53, 16));
+        label_desvalue->setGeometry(QRect(170, 430, 181, 31));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);

@@ -1,11 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-<<<<<<< HEAD
-** Created: Wed 9. May 14:26:40 2012
-=======
-** Created: Mon 7. May 12:18:36 2012
->>>>>>> 3d2aa17... Changes: Basic feature is ready.
+** Created: Wed 9. May 16:14:06 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -27,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -36,12 +32,16 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: signature, parameters, type, tag, flags
       12,   11,   11,   11, 0x08,
+      36,   11,   11,   11, 0x08,
+      62,   11,   11,   11, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_MainWindow[] = {
     "MainWindow\0\0on_pushButton_clicked()\0"
+    "on_pushButton_2_clicked()\0"
+    "on_pushButton_3_clicked()\0"
 };
 
 const QMetaObject MainWindow::staticMetaObject = {
@@ -76,9 +76,11 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: on_pushButton_clicked(); break;
+        case 1: on_pushButton_2_clicked(); break;
+        case 2: on_pushButton_3_clicked(); break;
         default: ;
         }
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }

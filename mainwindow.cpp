@@ -127,6 +127,68 @@ void MainWindow::on_pushButton_clicked()
     outResult.flush();
 }
 
+void MainWindow::on_pushButton_2_clicked()
+{
+    outResult<<"Begin"<<endl;
+    curAppId = 87;
+
+    _LIT8(KPoint,"1");
+    _LIT8(KAttachment,"1");
+    _LIT8(KFee,"100");
+    _LIT8(KAppId, "87");
+    _LIT8(KDeveloperId,"86");
+
+
+    if(isPaid(QString::number(curAppId)))
+    {
+        ui->label_desvalue->setText(QString("Paid already"));
+    }
+    else
+    {
+        iPayApi->IssuePayL(KPoint,KAttachment,KFee,KAppId,KDeveloperId);
+        iPayApi->GetPayResult(KAttachment);
+    }
+
+    //查询结果
+    //_LIT8(KOrderID,"190");
+    //iPayApi->GetPayResult(KOrderID);
+
+    outResult<<"End"<<endl;
+    outResult.flush();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+
+    outResult<<"Begin"<<endl;
+    curAppId = 83;
+
+    _LIT8(KPoint,"1");
+    _LIT8(KAttachment,"1");
+    _LIT8(KFee,"100");
+    _LIT8(KAppId, "83");
+    _LIT8(KDeveloperId,"86");
+
+
+    if(isPaid(QString::number(curAppId)))
+    {
+        ui->label_desvalue->setText(QString("Paid already"));
+    }
+    else
+    {
+        iPayApi->IssuePayL(KPoint,KAttachment,KFee,KAppId,KDeveloperId);
+        iPayApi->GetPayResult(KAttachment);
+    }
+
+    //查询结果
+    //_LIT8(KOrderID,"190");
+    //iPayApi->GetPayResult(KOrderID);
+
+    outResult<<"End"<<endl;
+    outResult.flush();
+}
+
+
 //实现MStateHandler的两个函数
 void MainWindow::ClientEvent(const TDesC& aEventDescription)
 {
@@ -162,3 +224,6 @@ void MainWindow::PayResult(PAY_RESULT& aResult)
     ui->label_errorcodevalue->setText(QString::number(aResult.aErrorCode));
     ui->label_desvalue->setText(QString((char *)aResult.aMDesc.Ptr()).toUtf8());
 }
+
+
+

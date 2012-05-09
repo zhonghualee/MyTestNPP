@@ -21,6 +21,10 @@ public:
         void ClientEvent(const TDesC& aEventDescription);
         void PayResult(PAY_RESULT& aResult);
 
+private:
+    bool isPaid(QString appId);
+    int curAppId;
+
 private slots:
     void on_pushButton_clicked();
 

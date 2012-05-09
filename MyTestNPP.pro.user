@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
+<!-- Written by Qt Creator 2.4.1, 2012-05-09T15:06:31. -->
+=======
 <!-- Written by Qt Creator 2.4.1, 2012-05-07T17:24:10. -->
+>>>>>>> 3d2aa17... Changes: Basic feature is ready.
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -164,7 +168,7 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.S60SignBuildStep</value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Certificate"></value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Keyfile"></value>
-      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">0</value>
+      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">2</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SmartInstaller">false</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SuppressPatchWarningDialog">false</value>
      </valuemap>
@@ -179,7 +183,7 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.S60SignBuildStep</value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Certificate"></value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Keyfile"></value>
-      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">0</value>
+      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">2</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SmartInstaller">false</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SuppressPatchWarningDialog">false</value>
      </valuemap>
@@ -189,7 +193,11 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.S60SignBuildStep</value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Certificate"></value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Keyfile"></value>
+<<<<<<< HEAD
+      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">2</value>
+=======
       <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">0</value>
+>>>>>>> 3d2aa17... Changes: Basic feature is ready.
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SmartInstaller">false</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SuppressPatchWarningDialog">false</value>
      </valuemap>
@@ -199,7 +207,11 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.S60SignBuildStep</value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Certificate"></value>
       <value type="QString" key="Qt4ProjectManager.S60CreatePackageStep.Keyfile"></value>
+<<<<<<< HEAD
+      <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">2</value>
+=======
       <value type="int" key="Qt4ProjectManager.S60CreatePackageStep.SignMode">0</value>
+>>>>>>> 3d2aa17... Changes: Basic feature is ready.
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SmartInstaller">false</value>
       <value type="bool" key="Qt4ProjectManager.S60CreatorPackageStep.SuppressPatchWarningDialog">false</value>
      </valuemap>

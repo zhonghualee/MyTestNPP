@@ -1,7 +1,11 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
+<<<<<<< HEAD
+** Created: Wed 9. May 14:26:39 2012
+=======
 ** Created: Mon 7. May 15:45:31 2012
+>>>>>>> 3d2aa17... Changes: Basic feature is ready.
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

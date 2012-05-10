@@ -1,13 +1,17 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QPixmap>
 #include <QMainWindow>
-#include "PayApi.h"
+#include <QMap>
+#include <QTextStream>
 
+#include "PayApi.h"
 
 namespace Ui {
 class MainWindow;
 }
+
 
 class MainWindow : public QMainWindow,public MStateHandler
 {
@@ -20,20 +24,24 @@ public:
 public:
         void ClientEvent(const TDesC& aEventDescription);
         void PayResult(PAY_RESULT& aResult);
+protected:
+    void paintEvent(QPaintEvent *);
 
 private:
     bool isPaid(QString appId);
-    int curAppId;
 
 private slots:
     void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;
     CPayApi* iPayApi;
+
+    QPixmap pixmap;
+    int curAppId;
+    bool pictureShow;
+    QTextStream outRecord;
+    QMap<QString,int> paidResult;
 };
 
 #endif // MAINWINDOW_H

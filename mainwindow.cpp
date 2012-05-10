@@ -14,11 +14,11 @@
 #include <QByteArray>
 #include <QtGui>
 
+const int appId = 89;
 
-QFile fRecord("e:\\paidSuccessRecord.txt");
+QFile fRecord(QApplication::applicationDirPath() + "/paidSuccessRecord.txt");
 
-MainWindow::MainWindow(QWidget *parent) :
-    curAppId(-1),
+MainWindow::MainWindow(QWidget *parent) :    
     pictureShow(false),
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Load results which have been paid
     QString key;
-    QString value;    
+    QString value;
     QString line = outRecord.readLine();
     while (not line.isEmpty())
     {
@@ -48,6 +48,11 @@ MainWindow::MainWindow(QWidget *parent) :
     fRecord.close();
 
     pixmap.load(":/images/paid.png");
+
+    if(isPaid(QString::number(appId)))
+    {
+        pictureShow = true;
+    }
 }
 
 MainWindow::~MainWindow()
@@ -72,29 +77,28 @@ void MainWindow::PayResult(PAY_RESULT& aResult)
     //save successful paid status to file
     if(aResult.aPayResult == 1 || aResult.aPayResult == 2)
     {
-        paidResult[QString::number(curAppId)]= int(aResult.aPayResult);
+        paidResult[QString::number(appId)]= int(aResult.aPayResult);
 
         fRecord.open(QIODevice::ReadWrite|QIODevice::Append|QIODevice::Text);
         outRecord.setDevice(&fRecord);
         QTextCodec *codec=QTextCodec::codecForName("utf-8");
         outRecord.setCodec(codec);
 
-        outRecord<<QString::number(curAppId)<<" "<<int(aResult.aPayResult)<<endl;
+        outRecord<<QString::number(appId)<<" "<<int(aResult.aPayResult)<<endl;
         outRecord.flush();
         fRecord.close();
     }
 }
 
 void MainWindow::on_pushButton_clicked()
-{
-    curAppId = 89;
+{    
     _LIT8(KPoint,"1");
     _LIT8(KAttachment,"1");
     _LIT8(KFee,"100");
     _LIT8(KAppId, "89");
     _LIT8(KDeveloperId,"86");
 
-    if(isPaid(QString::number(curAppId)))
+    if(isPaid(QString::number(appId)))
     {
         pictureShow = true;
         update();

@@ -38,7 +38,6 @@ private:
     CPayApi* iPayApi;
 
     QPixmap pixmap;
-    int curAppId;
     bool pictureShow;
     QTextStream outRecord;
     QMap<QString,int> paidResult;
